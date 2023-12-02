@@ -11,12 +11,15 @@ function decreaseTimer() {
 
   if (timer === 0) {
     if (player.health === enemy.health) {
+      result.classList.add("wins");
       result.innerHTML = "A Tie";
     }
     if (player.health > enemy.health) {
+      result.classList.add("wins");
       result.innerHTML = "Player 1 wins";
     }
     if (enemy.health > player.health) {
+      result.classList.add("wins");
       result.innerHTML = "Player 2 wins";
     }
   }
@@ -24,13 +27,13 @@ function decreaseTimer() {
 
 function WhoWins() {
   if (enemy.health === 0) {
-    result.classList.add("enemywins");
+    result.classList.add("wins");
     result.result.innerHTML = "Player 1 wins";
     timer = 0;
     return;
   }
   if (player.health === 0) {
-    result.classList.add("enemywins");
+    result.classList.add("wins");
     result.innerHTML = "Player 2 wins";
     timer = 0;
   }
