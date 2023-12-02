@@ -6,7 +6,7 @@ body {
   background: rgb(17, 17, 17);
 }
 
-.enemywins {
+.wins {
   font-size: large;
   font-weight: bold;
   color: rgb(247, 247, 247);
