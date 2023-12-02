@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(17, 17, 17);
+}
+
+.enemywins {
+  font-size: large;
+  font-weight: bold;
+  color: rgb(247, 247, 247);
+}
